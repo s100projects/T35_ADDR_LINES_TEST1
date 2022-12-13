@@ -1,0 +1,24 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2022.1.226 
+Date: Mon Dec 12 22:54:13 2022
+
+Copyright (C) 2013 - 2022 Efinix Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T35F400
+Top-level Entity Name: T35_ADDR_LINES_TEST1
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- Resource Summary (begin) ----------
+Inputs: 4 / 908 (0.44%)
+Outputs: 45 / 1184 (3.80%)
+Clocks: 1 / 16 (6.25%)
+Logic Elements: 39 / 31680 (0.12%)
+	LE: LUTs/Adders: 38 / 31680 (0.12%)
+	LE: Registers: 27 / 30720 (0.09%)
+Memory Blocks: 0 / 288 (0.00%)
+Multipliers: 0 / 120 (0.00%)
+---------- Resource Summary (end) ----------
+
+Elapsed time for placement: 0 hours 0 minutes 3 seconds

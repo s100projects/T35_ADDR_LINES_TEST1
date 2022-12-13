@@ -1,0 +1,164 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2022.1.226 
+Compiled: Aug 29 2022.
+
+Copyright (C) 2013 - 2022 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T35F400" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.0014977 seconds.
+	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 11.908 MB, end = 11.908 MB, delta = 0 MB
+	VDB Netlist Checker peak virtual memory usage = 52.604 MB
+VDB Netlist Checker resident set memory usage: begin = 22.164 MB, end = 22.32 MB, delta = 0.156 MB
+	VDB Netlist Checker peak resident set memory usage = 60.784 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow/T35_ADDR_LINES_TEST1.interface.csv'.
+Successfully processed interface constraints file "C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow/T35_ADDR_LINES_TEST1.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+Pass 0: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 0 blocks in total.
+Removed 0 LUT buffers.
+Successfully created VPR logical netlist from Verific binary DataBase file "C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1.vdb".
+Netlist pre-processing took 0.0176769 seconds.
+	Netlist pre-processing took 0.015625 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 11.84 MB, end = 12.428 MB, delta = 0.588 MB
+	Netlist pre-processing peak virtual memory usage = 52.604 MB
+Netlist pre-processing resident set memory usage: begin = 21.872 MB, end = 22.772 MB, delta = 0.9 MB
+	Netlist pre-processing peak resident set memory usage = 60.784 MB
+***** Ending stage netlist pre-processing *****
+
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+
+***** Beginning stage packing ... *****
+Generate proto netlist for file "C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/work_pnr\T35_ADDR_LINES_TEST1.net_proto" took 0.001 seconds
+Creating IO constraints file 'C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/work_pnr\T35_ADDR_LINES_TEST1.io_place'
+Packing took 0.0047099 seconds.
+	Packing took 0 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 21 MB, end = 21 MB, delta = 0 MB
+	Packing peak virtual memory usage = 52.604 MB
+Packing resident set memory usage: begin = 31.664 MB, end = 31.896 MB, delta = 0.232 MB
+	Packing peak resident set memory usage = 60.784 MB
+***** Ending stage packing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/work_pnr\T35_ADDR_LINES_TEST1.net_proto
+Read proto netlist for file "C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/work_pnr\T35_ADDR_LINES_TEST1.net_proto" took 0 seconds
+Setup net and block data structure took 0.002 seconds
+Packed netlist loading took 0.0197481 seconds.
+	Packed netlist loading took 0 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 21 MB, end = 21.208 MB, delta = 0.208 MB
+	Packed netlist loading peak virtual memory usage = 60.36 MB
+Packed netlist loading resident set memory usage: begin = 31.908 MB, end = 32.288 MB, delta = 0.38 MB
+	Packed netlist loading peak resident set memory usage = 71.34 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+
+No SDC file found.  Using default timing constraint of 1 ns.
+NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow/T35_ADDR_LINES_TEST1.interface.csv'.
+Successfully processed interface constraints file "C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow/T35_ADDR_LINES_TEST1.interface.csv".
+Writing IO placement constraints to 'C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow\T35_ADDR_LINES_TEST1.interface.io'.
+
+Reading placement constraints from 'C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow\T35_ADDR_LINES_TEST1.interface.io'.
+
+Reading placement constraints from 'C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/work_pnr\T35_ADDR_LINES_TEST1.io_place'.
+WARNING(1): Clock driver, pll0_2MHz, should not directly drive output pad, pSYNC, in the core. Use the 'clkout' mode in GPIO instead.
+WARNING(2): Clock input pad, pll0_2MHz, of net, pSYNC, drives both clock buffer and logic. Expect extra clock skew.
+***** Ending stage initial placement *****
+
+***** Beginning stage placement ... *****
+Create C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow\T35_ADDR_LINES_TEST1_after_qp.qdelay
+NumRegions 1
+Starting Global Placer with 8 threads ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1         345           -1176        90.5%
+          2         337           -1176        94.9%
+          3         332           -1176        98.3%
+          4         336           -1176        99.2%
+          5         336           -1176        99.2%
+          6         336           -1176        99.3%
+          7         336           -1176        99.8%
+          8         336           -1176        99.8%
+          9         336           -1176        99.8%
+         10         336           -1176        99.8%
+         11         336           -1176        99.9%
+         12         336           -1176       100.0%
+         13         336           -1468       100.0%
+         14         336           -1468       100.0%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0         336            2348        30.0
+          1         320            2348        30.0
+          2         315            2348        30.0
+          3         302            2348        30.0
+          4         305            2348        30.0
+          5         302            2348        30.0
+          6         296            2348        30.0
+          7         299            2348        30.0
+          8         296            2348        30.0
+          9         298            2348        30.0
+         10         298            2348        30.0
+         11         298            2348        30.0
+         12         296            2348        30.0
+         13         289            2348        30.0
+         14         289            2348        30.0
+         15         292            2348        30.0
+         16         290            2348        30.0
+         17         290            2348        30.0
+         18         296            2348        30.0
+         19         299            2348        30.0
+         20         290            2348        30.0
+         21         291            2348        30.0
+         22         290            2348        30.0
+         23         286            2348        30.0
+         24         286            2348        30.0
+         25         291            2348        30.0
+         26         289            2348        30.0
+         27         287            2348        30.0
+         28         287            2348        30.0
+         29         283            2348        30.0
+         30         286            2348        30.0
+         31         281            2348        30.0
+         32         283            2348        30.0
+Generate C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow\T35_ADDR_LINES_TEST1_after_qp.qdelay
+Placement successful: 39 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.0132864 at 0,25
+Congestion-weighted HPWL per net: 3.90644
+
+Reading placement constraints from 'C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow/T35_ADDR_LINES_TEST1.qplace'.
+Finished Realigning Types (8 blocks needed type change)
+
+Completed placement consistency check successfully.
+Successfully created FPGA place file 'C:/s100projects/T35_ADDR_LINES_TEST1/T35_ADDR_LINES_TEST1/outflow/T35_ADDR_LINES_TEST1.place'
+Placement took 3.30508 seconds.
+	Placement took 2.1875 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 21.208 MB, end = 36.084 MB, delta = 14.876 MB
+	Placement peak virtual memory usage = 182.868 MB
+Placement resident set memory usage: begin = 32.3 MB, end = 42.092 MB, delta = 9.792 MB
+	Placement peak resident set memory usage = 186.484 MB
+***** Ending stage placement *****
+
