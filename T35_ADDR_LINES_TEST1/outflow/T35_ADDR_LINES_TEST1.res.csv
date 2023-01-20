@@ -1,8 +1,0 @@
-sep=\t
-Module Resource Usage Distribution Estimates
-Generated at: Dec 12, 2022 22:53:50
-
-Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
-
-Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
-T35_ADDR_LINES_TEST1_top:T35_ADDR_LINES_TEST1_top  	     27(27)	     26(26)	     10(10)	     0(0)	     0(0)	

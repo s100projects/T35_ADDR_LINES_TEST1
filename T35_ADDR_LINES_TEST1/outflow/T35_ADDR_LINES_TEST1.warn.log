@@ -1,8 +1,0 @@
-
-///////////////////////////////////
-// Efinity Synthesis Started 
-// Dec 12, 2022 22:53:49
-///////////////////////////////////
-
-[EFX-0011 VERI-WARNING] expression size 28 truncated to fit in target size 27 (VERI-1209) (C:\s100projects\T35_ADDR_LINES_TEST1\T35_ADDR_LINES_TEST1\T35_ADDR_LINES_TEST1_top.v:85)
-[EFX-0008 WARNING] Top module not specified. 'T35_ADDR_LINES_TEST1_top' is used as top module for the design.
